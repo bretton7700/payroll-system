@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Employee Registration </title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" a href="css\style.css">
+</head>
+
+
+
+<body style="background:darkgrey">
+
+	<div class="container" style="width:400px; height:400px; border: solid black 1px; justify-content:space-around
+	;overflow: hidden;float: left; margin: 20px auto; padding: 20px;background-image: url('images/bg-01.jpg'); ">
+		<div class="left">
+			<form class="" action="Department.php">
+				<div class="row">
+
+					<div class="col-sm-3">
+						<h1 style="color:brown;text-align:center;">Departments</h1>
+
+						<label for="Department_Name"><b>Department_Name</b></label>
+						<input class="form-control" id="Department_Name" type="text" name="Department_Name" required>
+
+						<label for="Department_Desc"><b>Department_Desc</b></label>
+						<input class="form-control" id="Department_Desc" type="text" name="Department_Desc">
+
+
+
+						<hr>
+						<input class="btn btn-success" type="submit" value="depts" name="login_btn" id="DepButton1">
+
+
+					</div>
+
+				</div>
+		</div>
+		</form>
+		<form action="departmentsEdit.php">
+
+			<div class="row">
+				<div class="col-sm-3">
+
+
+
+					<input class="btn btn-danger" type="submit" value="EDIT" name="Edit_btn" id="DepButton2">
+
+				</div>
+			</div>
+		</form>
+
+	</div>
+
+	<div class="container" style="width:600px; height:400px; border: solid black 1px; justify-content:space-between
+	;overflow: hidden; margin: 20px auto; padding: 20px;background-image: url('images/bg-01.jpg'); ">
+
+		<div>
+			<form action="finger.php">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-sm-3">
+							<h1 style="color:brown;text-align:center;">Finger_PRINTS</h1>
+							<label for="Finger_Print_Desc"><b>Finger_Print_Desc</b></label>
+							<input class="form-control" id="Finger_Print_Desc" type="text" name="Finger_Print_Desc"
+								required>
+
+							<label for="Finger_Print_Image"><b>Finger_Print_Image</b></label>
+							<input class="form-control" id="Finger_Print_Image" type="file" name="Finger_Print_Image"
+								required>
+
+							<hr class="mb-3">
+							<input class="btn btn-success" type="submit" value="SAVE Fingerprints">
+						</div>
+
+					</div>
+				</div>
+
+			</form>
+
+			<form action="fingerPrintEdit.php" enctype="multipart/form-data">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-sm-3">
+
+
+
+							<input class="btn btn-danger" type="submit" value="EDIT" name="Edit_btn">
+
+						</div>
+					</div>
+				</div>
+			</form>
+
+		</div>
+
+	</div>
+
+
+
+
+	<div class="container" style="width:600px; height:500px; border: solid black 1px; justify-content:space-between
+	;overflow: hidden;float: right; margin: 20px auto; padding: 20px;background-image: url('images/bg-01.jpg'); ">
+
+		<form action="process.php" method="post">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-3">
+						<h1 style="color:brown;text-align:center;">Registration</h1>
+
+						<hr class="mb-3">
+						<label for="Employee_Name"><b>Employee_Name</b></label>
+						<input class="form-control" id="Employee_Name" type="text" name="Employee_Name" required>
+
+						<label for="Department_Name"><b>Department_Name</b></label>
+						<input class="form-control" id="EmployeeDepartment_Name" type="text" name="Department_Name"
+							required>
+
+						<label for="Employee_Email"><b>Email Address</b></label>
+						<input class="form-control" id="email" type="email" name="Employee_Email" required>
+
+						<label for="Employee_Phone_Number"><b>Employee_Phone_Number</b></label>
+						<input class="form-control" id="phonenumber" type="text" name="Employee_Phone_Number" required>
+
+
+						<hr class="mb-3">
+						<input class="btn btn-success" type="submit" value="ADD EMPLOYEE" name="addEmployee_btn">
+
+					</div>
+				</div>
+			</div>
+		</form>
+
+
+
+
+		<form action="admin.php">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-3">
+
+
+
+						<input class="btn btn-danger" type="submit" value="EDIT" name="Edit_btn">
+
+					</div>
+				</div>
+			</div>
+		</form>
+
+	</div>
+
+
+
+
+
+	<div id="login" class="container" style="width:500px; height:500px; border: solid black 1px; justify-content:space-between
+		;overflow: hidden;float:left; margin: 20px auto; padding: 20px;
+		background-image: url('images/bg-01.jpg');">
+
+
+		<form action="LoginProcess.php" method="post">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-3">
+						<h1 style="color:brown;text-align:center;">LoginDetails</h1>
+
+						<hr class="mb-3">
+						<label for="Login_Name"><b>Login_Name</b></label>
+						<input class="form-control" id="Login_Name" type="text" name="Login_Name" required>
+
+						<label for="Login_Password"><b>Login_Password</b></label>
+						<input class="form-control" id="Login_Password" type="password" name="Login_Password" required>
+
+						<label for="Login_Rank"><b>Login_Rank</b></label>
+
+						<select name="Login_Rank" id="Login_Rank">
+							<option value="Admin">Admin</option>
+							<option value="Employee">Employee</option>
+						</select>
+
+
+						<hr class="mb-3">
+						<input class="btn btn-success" type="submit" value="Your login" name="addEmployee_btn">
+
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<form action="LoginEdit.php">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-3">
+
+
+
+						<input class="btn btn-danger" type="submit" value="EDIT" name="Edit_btn">
+
+					</div>
+				</div>
+		</form>
+
+	</div>
+	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
